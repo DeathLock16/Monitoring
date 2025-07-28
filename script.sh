@@ -1,12 +1,12 @@
 #!/bin/bash
 
-SRC_SCRIPT="/home/put/Desktop/dist/screensender.sh"
-SRC_UNIT="/home/put/Desktop/screensender.service"
-USERNAME="put"
-SSHPASS="put"
+SRC_SCRIPT="SENDER FILE PATH"
+SRC_UNIT="SERVICE FILE PATH"
+USERNAME="INSERT USERNAME HERE"
+SSHPASS="INSERT PASSWORD HERE"
 
-for i in {29..46}; do
-  IP="150.254.129.$i"
+for i in {1..254}; do
+  IP="192.168.0.$i"
   echo "— Aktualizacja $IP —"
 
   # 1) Zabijamy poprzedni screensender.sh
