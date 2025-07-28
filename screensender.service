@@ -1,0 +1,14 @@
+[Unit]
+Description=ScreenSender Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/screensender.sh
+Restart=always
+RestartSec=5
+User=put
+
+[Install]
+WantedBy=multi-user.target
+
